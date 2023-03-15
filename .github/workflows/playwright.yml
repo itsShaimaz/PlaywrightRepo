@@ -37,13 +37,12 @@ jobs:
           path: playwright-report/
           retention-days: 30
 
-          
-- name: send default message
-  uses: appleboy/telegram-action@master
-  with:
-    to: ${{ secrets.TELEGRAM_TO }}
-    token: ${{ secrets.TELEGRAM_TOKEN }}
-    name: GitHub Actions Demo
+  # - name: send default message
+  #   uses: appleboy/telegram-action@master
+  #   with:
+  #     to: ${{ secrets.TELEGRAM_TO }}
+  #     token: ${{ secrets.TELEGRAM_TOKEN }}
+  #     name: GitHub Actions Demo
 
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

@@ -1,11 +1,11 @@
 name: Playwright Tests
 on:
-  # schedule:
-  #   - cron: "*/2 * * * *"
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
+  schedule:
+    - cron: "*/2 * * * *"
+  # push:
+  #   branches: [main, master]
+  # pull_request:
+  #   branches: [main, master]
 
 jobs:
   testa-e2e:
